@@ -92,31 +92,12 @@ const HomeComponent = () => {
   };
 
   const handlePostItem = (e) => {
-    ItemService.postItem(
-      {
-        general: { itemDescription, category, model, serialNumber, itemStatus, remarks },
-        vendor: { vendor, originalInvoice, purchaseCost, purchaseDate },
-        client: { client, clientInvoice, clientContractExpirationDate, warrantyPeriod, warrantyTC },
-        serviceCenter: { address, phoneNumber },
-      }
-      // itemDescription,
-      // category,
-      // model,
-      // serialNumber,
-      // itemStatus,
-      // remarks,
-      // vendor,
-      // originalInvoice,
-      // purchaseCost,
-      // purchaseDate,
-      // client,
-      // clientInvoice,
-      // clientContractExpirationDate,
-      // warrantyPeriod,
-      // warrantyTC,
-      // address,
-      // phoneNumber
-    )
+    ItemService.postItem({
+      general: { itemDescription, category, model, serialNumber, itemStatus, remarks },
+      vendor: { vendor, originalInvoice, purchaseCost, purchaseDate },
+      client: { client, clientInvoice, clientContractExpirationDate, warrantyPeriod, warrantyTC },
+      serviceCenter: { address, phoneNumber },
+    })
       .then((data) => {
         console.log("data = ", data);
       })
