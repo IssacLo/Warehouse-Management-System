@@ -18,7 +18,7 @@ mongoose
     console.log("Connect to Mongo Altas");
   })
   .catch((e) => {
-    console.log("Error");
+    console.log("Mongo Altas Error");
   });
 
 //middleware

@@ -92,7 +92,6 @@ const HomeComponent = () => {
   };
 
   const handlePostItem = (e) => {
-    console.log("hihi");
     ItemService.postItem(
       {
         general: { itemDescription, category, model, serialNumber, itemStatus, remarks },
