@@ -1,0 +1,8 @@
+.container {
+  background: black;
+  color: aliceblue;
+  height: 4rem;
+  position: sticky;
+  font-size: 2rem;
+  font-weight: bold;
+}

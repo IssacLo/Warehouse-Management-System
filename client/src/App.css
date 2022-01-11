@@ -1,0 +1,20 @@
+.gridContainer {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navComponent {
+  grid-column: span 5;
+}
+
+.sideComponent {
+  grid-column: 1/2;
+}
+.homeComponent {
+  grid-column: 2/6;
+}
+
+body {
+  margin: 0;
+}

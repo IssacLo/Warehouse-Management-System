@@ -1,0 +1,32 @@
+.form-content {
+  background-color: rgb(248, 248, 248);
+  min-height: 800px;
+}
+
+.page-content {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-left: 1rem;
+}
+
+.input-content {
+  margin-bottom: 1rem;
+  width: 500px;
+}
+
+span {
+  width: 70px;
+  padding: 8px;
+  border: 1px solid black;
+  border-radius: 5px;
+  cursor: pointer;
+}
+span:hover {
+  background: black;
+  color: aliceblue;
+}

@@ -1,0 +1,32 @@
+.sidebar {
+  background-color: rgb(43, 42, 56);
+  height: 1050px;
+  color: white;
+}
+
+.sidebar-logo {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.sidebar-list {
+  color: white;
+}
+
+.sidebar-row {
+  margin-bottom: 0.5rem;
+
+  padding: 1rem;
+  display: flex;
+  flex-direction: row;
+  font-size: 1rem;
+  /* cursor: pointer; */
+}
+
+.sidebar-row:hover {
+  cursor: pointer;
+  background-color: rgb(65, 63, 65);
+}
