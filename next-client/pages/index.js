@@ -1,7 +1,15 @@
-export default function Home(data) {
-  return <div>home</div>;
+import HomeComponent from "../component/HomeComponent";
+import ItemService from "../service/itemService";
+
+function HomePage() {
+  return (
+    <div>
+      <HomeComponent />
+    </div>
+  );
 }
 
+export default HomePage;
 // export default function getStaticProps(){
 // return{
 //   props:{
