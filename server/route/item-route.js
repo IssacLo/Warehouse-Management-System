@@ -6,6 +6,19 @@ router.use((req, res, next) => {
   next();
 });
 
+router.get("/", (req, res) => {
+  // console.log("working");
+
+  Item.find({})
+    .then((item) => {
+      console.log("item", item);
+      res.send(item);
+    })
+    .catch(() => {
+      res.status(500).send("Error");
+    });
+});
+
 router.post("/", async (req, res) => {
   // try {
   //   console.log("req.body = ", req.body);

@@ -1,4 +1,5 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+import { useHistory } from "react-router-dom";
 import "./Home.css";
 import ItemService from "../service/itemService";
 
@@ -105,6 +106,15 @@ const HomeComponent = () => {
         console.log("error =", error);
       });
   };
+
+  useEffect(() => {
+    console.log("Using effect");
+    ItemService.getItem().then((data) => {
+      console.log("data", data).catch((err) => {
+        console.log(err);
+      });
+    });
+  });
 
   return (
     <div>

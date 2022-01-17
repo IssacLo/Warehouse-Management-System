@@ -4,11 +4,18 @@ import FooterComponent from "./FooterComponent";
 
 const LayoutComponent = ({ children }) => {
   return (
-    <div>
-      <NavComponent />
-      {/* <SidebarComponent /> */}
+    <div className="gridContainer">
+      <div className="navComponent">
+        <NavComponent />
+      </div>
+      <div className="sideComponent">
+        <SidebarComponent />
+      </div>
       {children}
-      <FooterComponent />
+      {/* <div className="homeComponent">
+        <HomeComponent />
+      </div> */}
+      {/* <FooterComponent /> */}
     </div>
   );
 };

@@ -1,4 +1,5 @@
 // import "./Nav.css";
+// import "../styles/nav.css";
 
 const navComponent = () => {
   return (

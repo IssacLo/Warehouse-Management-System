@@ -2,6 +2,10 @@ import axios from "axios";
 const API_URL = "http://localhost:8080/api/item";
 
 class ItemService {
+  getItem(_id) {
+    return axios.get(API_URL);
+  }
+
   postItem({
     general: { itemDescription, category, model, serialNumber, itemStatus, remarks },
     vendor: { vendor, originalInvoice, purchaseCost, purchaseDate },
