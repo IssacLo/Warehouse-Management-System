@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link } from "next/link";
 import { AiFillCaretRight } from "react-icons/ai";
 // import "./side.css";
 import { SidebarData } from "./SidebarData";

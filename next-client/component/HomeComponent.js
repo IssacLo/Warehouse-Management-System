@@ -13,28 +13,16 @@ import ItemService from "../service/itemService";
 // });
 
 const HomeComponent = ({ item, error }) => {
-  // console.log(item);
   // console.log(error);
   // console.log("123123");
 
   return (
-    // <ul>
-    //   {item.map((item) => {
-    //     <li key={item.id}>{item.client}</li>;
-    //   })}
-    // </ul>
-    <div>homeee</div>
+    <div>
+      {item.map((item) => {
+        <div>{item.client}</div>;
+      })}
+    </div>
   );
 };
-
-// HomeComponent.getStaticProps = async (ctx) => {
-//   try {
-//     const res = await axios.get("http://localhost:8080/api/item");
-//     const item = res.data;
-//     return { item };
-//   } catch (error) {
-//     return { error };
-//   }
-// };
 
 export default HomeComponent;
