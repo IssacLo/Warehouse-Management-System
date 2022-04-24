@@ -1,0 +1,9 @@
+.background {
+    min-height: 55rem;
+    background-color: rgb(246, 249, 252);
+  }
+  .container {
+    height: 100%;
+    width: 100%;
+ 
+  }

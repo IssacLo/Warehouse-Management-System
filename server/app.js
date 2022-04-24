@@ -5,6 +5,8 @@ const dotenv = require("dotenv");
 dotenv.config();
 const cors = require("cors");
 const itemRoute = require("./route/item-route");
+const authRoute = require("./route/auth-route");
+const rmaRoute = require("./route/rma-route");
 const Item = require("./models/item-model");
 const PORT = process.env.PORT || 8080;
 
@@ -24,9 +26,11 @@ mongoose
 //middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-
 app.use(cors());
+app.use("/api/user", authRoute);
+// app.use("/api/item", passport.authenticate("jwt", { session: false }), itemRoute);
 app.use("/api/item", itemRoute);
+app.use("/api/rma", rmaRoute);
 // app.use(itemRoute);
 
 app.listen(8080, () => {

@@ -1,6 +1,6 @@
 import { useRouter } from "next/router";
 
-function aboutId() {
+function AboutId() {
   const router = useRouter();
   console.log("router.pathname", router.pathname);
   console.log("route", router.query);
@@ -8,4 +8,4 @@ function aboutId() {
   return <div>aboutId</div>;
 }
 
-export default aboutId;
+export default AboutId;

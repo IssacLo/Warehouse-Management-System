@@ -1,0 +1,196 @@
+/* @import url("https://cdn.syncfusion.com/ej2/material.css"); */
+
+.background {
+  /* background-color: black; */
+  /* width: inherit; */
+  min-height: 55rem;
+  /* overflow: hidden; */
+}
+
+.container {
+  background-color: rgb(246, 249, 252);
+  min-height: 55rem;
+}
+
+.formContainer {
+  display: flex;
+  flex-direction: column;
+  /* flex-wrap: wrap; */
+}
+
+.formWrap {
+  /* border: 1px solid red;
+  width: 100%; */
+  background-color: white;
+  margin: 0.5rem 2rem;
+
+  padding: 2rem;
+  /* box-shadow: 3px 3px 3px 3px rgb(155, 153, 153); */
+}
+.formWrap_1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.formH2 {
+}
+.formPart {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  /* border: 1px solid black; */
+}
+
+.formClientPartTwo{
+  border: 1px solid grey;
+  border-radius: 5px;
+}
+/* .formPart:focus {
+  color: rgb(43, 177, 175);
+} */
+
+.formInvoiceCard {
+  width: 90%;
+  border: 2px dashed grey;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.formInvoicePart {
+  position: relative;
+}
+
+.formInvoicePart input {
+  position: relative;
+  width: 100%;
+  height: 50%;
+  z-index: 2;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.formInvoicePart button {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 50%;
+  z-index: 1;
+  color: #fff;
+  background-color: rgb(55, 111, 207);
+  border: none;
+  font-size: 1rem;
+  /* padding: 0.7rem 1.2rem; */
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.formInvoicePart p {
+  color: gray;
+  margin: 5px auto;
+  /* font-size: 100%; */
+}
+
+.formInvoiceImage {
+  width: 100%;
+  height: 100%;
+}
+
+.formInput {
+  min-height: 2rem;
+  border: 1px solid rgb(161, 161, 164);
+  border-radius: 5px;
+  outline: none;
+  width: 92%;
+  padding: 0.7rem 0;
+  padding-left: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formInput:hover {
+  border-color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px 1px rgb(222, 220, 220);
+}
+.formInput:focus {
+  border: 2px solid rgb(47, 93, 174);
+}
+
+.formSelect {
+  min-height: 3rem;
+  border: 1px solid rgb(161, 161, 164);
+  border-radius: 5px;
+  outline: none;
+  width: 95%;
+  padding: 0.7rem 0;
+  padding-left: 1rem;
+  font-family: inherit;
+}
+.formSelect:hover {
+  border-color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px 1px rgb(222, 220, 220);
+}
+.formSelect:focus {
+  border: 2px solid rgb(47, 93, 174);
+}
+
+.formLabel {
+  position: absolute;
+  left: 1rem;
+  top: 1.2rem;
+  padding: 0 0.5rem;
+  background-color: white;
+  color: rgb(161, 161, 164);
+  transition: top 150ms ease-in, left 150ms ease-in, font-size 150ms ease-in;
+  cursor: text;
+  /* border: 1px solid black; */
+  /* padding-left: 1rem;
+  padding-bottom: 0.1rem; */ /* width: 20rem; */
+}
+
+.formLabel:focus {
+  color: rgb(43, 177, 175);
+}
+
+.formInput:focus ~ .formLabel,
+.formInput:not(:placeholder-shown).formInput:not(:focus) ~ .formLabel {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: rgb(47, 93, 174);
+}
+
+.formSelect:focus ~ .formLabel,
+.formSelect:not(:placeholder-shown).formSelect:not(:focus) ~ .formLabel {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: rgb(47, 93, 174);
+}
+
+.formButton {
+  /* justify-content: flex-start; */
+  /* padding: 1rem; */
+  font-size: 1rem;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  margin-top: 1rem;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  width: 6rem;
+  padding: 1rem 0;
+  color: #fff;
+  background-color: rgb(55, 111, 207);
+}
+
+.formButton:hover {
+  background-color: rgb(47, 93, 174);
+}
+
+.formDateRange{
+ 
+ 
+ 
+}

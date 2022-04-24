@@ -1,0 +1,136 @@
+.background {
+  min-height: 55rem;
+  background-color: rgb(246, 249, 252);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 35rem;
+  width: 30rem;
+  /* border: 1px solid #ffbb2b; */
+  border-radius: 5px;
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); */
+  background: #fff;
+  /* border: 1px solid grey; */
+  color: black;
+}
+
+.title {
+  text-align: center;
+}
+
+.formContainer {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.formContent {
+  /* background: #010101;
+    max-width: 600px;
+    height: auto;
+    width: 100%;
+    z-index: 0; */
+  display: grid;
+  margin-bottom: 2rem;
+  margin-left: 2rem;
+  margin-right: 2rem;
+
+  /* border-radius: 20px; */
+  /* box-shadow: 0 1px 3px rgba(0, 0, 0, 0.9); */
+}
+
+.formPart {
+  position: relative;
+  height: 3rem;
+  margin-bottom: 1.5rem;
+  /* border: 1px solid black; */
+}
+.formInput {
+  min-height: 2rem;
+  border: 1px solid rgb(161, 161, 164);
+  border-radius: 5px;
+  outline: none;
+  width: 92%;
+  padding: 0.7rem 0;
+  padding-left: 1rem;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.formInput:hover {
+  border-color: rgb(0, 0, 0);
+  box-shadow: 1px 1px 1px 1px rgb(222, 220, 220);
+}
+.formInput:focus {
+  border: 2px solid rgb(47, 93, 174);
+}
+.formLabel {
+  position: absolute;
+  left: 1rem;
+  top: 1.3rem;
+  padding: 0 0.5rem;
+  background-color: white;
+  color: rgb(161, 161, 164);
+  transition: top 150ms ease-in, left 150ms ease-in, font-size 150ms ease-in;
+  cursor: text;
+  /* border: 1px solid black; */
+  /* padding-left: 1rem;
+  padding-bottom: 0.1rem; */ /* width: 20rem; */
+}
+
+.formLabel:focus {
+  color: rgb(43, 177, 175);
+}
+
+.formInput:focus ~ .formLabel,
+.formInput:not(:placeholder-shown).formInput:not(:focus) ~ .formLabel {
+  top: -0.5rem;
+  left: 0.8rem;
+  font-size: 0.8rem;
+  color: rgb(47, 93, 174);
+}
+
+.formButton {
+  color: #fff;
+  padding: 0.7rem;
+  border-radius: 4px;
+  background-color: rgb(55, 111, 207);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.formButton:hover {
+  background-color: rgb(47, 93, 174);
+}
+.formButton2 {
+  color: rgb(47, 93, 174);
+  padding: 0.7rem;
+  border-radius: 4px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+.formButton2:hover {
+  background-color: rgb(246, 249, 252);
+}
+
+.formFooter {
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.formFooter span {
+  display: block;
+}
+/* .formFooter Link {
+  border-bottom: none;
+} */
