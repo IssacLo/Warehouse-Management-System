@@ -2,7 +2,6 @@ import HomeComponent from "../component/Home/HomeComponent";
 import ItemService from "../service/itemService";
 import axios from "axios";
 
-<<<<<<< HEAD
 function HomePage(props) {
   const { item, currentUser, setCurrentUser } = props;
   // console.log(item, "item");
@@ -10,20 +9,10 @@ function HomePage(props) {
   return (
     <div>
       <HomeComponent item={item} currentUser={currentUser} setCurrentUser={setCurrentUser} />
-=======
-function HomePage({ props, item }) {
-  console.log("item", item);
-  console.log("props", props);
-
-  return (
-    <div>
-      <HomeComponent item={item} />
->>>>>>> 556f3498685ec5e3163d818e96b207c5ded958d1
     </div>
   );
 }
 
-<<<<<<< HEAD
 // HomePage.getInitialProps = async () => {
 //   const res = await ItemService.getItem();
 //   return { item: res.data };
@@ -48,7 +37,6 @@ function HomePage({ props, item }) {
 //   };
 // }
 
-=======
 export const getStaticProps = async () => {
   const res = await ItemService.getItem();
 
@@ -59,5 +47,4 @@ export const getStaticProps = async () => {
   };
 };
 
->>>>>>> 556f3498685ec5e3163d818e96b207c5ded958d1
 export default HomePage;
